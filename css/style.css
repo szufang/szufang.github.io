@@ -380,11 +380,7 @@ section.section {
   background-repeat: no-repeat;
   background-color: #171717;
 }
-.invisionprototype-responsive
-		{
-			top: -200px;
-			left: -20%;
-		}
+
 /**
  * ====================================
  * Making Same Height Left & Right Part
