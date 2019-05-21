@@ -50,9 +50,46 @@
 </head>
 
 <body class="style-1">
+<!-- Start: Navbar  Area
+============================= -->
+<nav class="navbar navbar-fixed-top main-navbar-top navbar-top-js" id="main-navbar-top" >
+<div class="container relative">
+<div class="navbar-header">
 
-    <!--Start: 1st Section  
-            - HOME PAGE 
+<!-- Menu Button show Mobile view -->
+<button type="button" class="nav-trigger nav-trigger-animate"  data-target="#js-navbar-menu">
+<span aria-hidden="true" class="icon"></span>
+</button>
+
+<!-- TEMPLATE LOGO LIGHT -->
+<a class="navbar-brand light-logo btn-scroll" href="../../index.html"><img src="images/logo.png"  class="img-responsive"></a>
+
+</div>
+
+<!-- Main Menu List -->
+<div class="navbar-collapse" id="js-navbar-menu">
+<ul class="nav navbar-nav navbar-right" id="navbar-nav">
+<li><a class="btn-nav" href="#services-section">Intro</a></li>
+<li><a class="btn-nav" href="#portfolio-web-section">Website</a></li>
+<li><a class="btn-nav" href="#iOrder">Mobile App</a></li>
+</ul>
+</div>
+
+
+<!-- Right Side Navigation Button -->
+<div class="navbar-collapse-right hidden-xs " >
+<ul class="nav navbar-nav navbar-right btn-scroll">
+<!--  <li><a class="btn-nav" href="https://szufang.github.io/CV.pdf" target="_blank" >Check my CV <i class="icon icon-arrow-right"></i></a></li>-->
+</ul>
+</div>
+
+</div>
+</nav>
+<!-- End: Navbar Area
+============================= -->
+
+    <!--Start: 1st Section
+            - HOME PAGE
         ====================================-->
     <div class="section section-item home-section overflow hide-overlay bg-image-1 wow " style="background-image: url(images/trueticket.jpg);"
         id="trueticket">
@@ -80,8 +117,7 @@
                             <div class="overflow">
                                 <div class="list-view">
                                     <ul class="nav">
-                                        <h3 style="color: #e0e4ff;"> Event Ticketing Application </h3>
-                                        <h5 style="color: #e0e4ff;">For artists and venues to connect with and to sell
+                                        <h5 style="color: #e0e4ff;">An event ticketing application for artists and venues to connect with and to sell
                                             tickets to their fans in a safer way.</h5>
                                     </ul>
                                 </div>
@@ -103,8 +139,8 @@
             </div>
         </div>
     </div>
-    <!--End: 1st Section  
-            - HOME PAGE 
+    <!--End: 1st Section
+            - HOME PAGE
         ====================================-->
         <!--Start: 2nd Section
         - SERVICES PAGE
@@ -154,8 +190,8 @@
         - SERVICES PAGE
         ====================================-->
 
-    <!--Start: 2nd Section  
-            - SERVICES PAGE 
+    <!--Start: 2nd Section
+            - SERVICES PAGE
         ====================================-->
     <div class=" section section-item combine-section hide-overlay overflow dark-background" id="services-section">
         <div class="container">
@@ -164,17 +200,9 @@
                 <div class="col-sm-10 col-sm-offset-1">
                     <div style="text-align:center;">
                         <div class="subtitle p-l-50 p-r-50 p-t-50 p-b-50">
-                            <h5><i>Based on a new technology - Blockchain, True Tickets provides people a safer and more open way
-                                to sell and buy tickets.
-                                Artists control the price of the tickets from start to finish, even when the tickets
-                                are selling on the secondary market.
-                                The goal of this platform is to reduce scalpers and provide buyers with tickets at a
-                                fair price and directly benefit the
-                                artists instead of the unwanted price the users end up paying the scalpers.</i></h5>
-                                <h3>Our high level goals for True Ticket were to:</h3>
-                                <h5>1. Make the booking process faster and easier to fans.<br>
-                                2. Give fans a way to refund or resell tickets.<br>
-                                3. Provide a social media channel for artists and fans to interact.</h5>
+                            <h5><i>True Tickets is a ticket selling platform that allows people to sell and buy tickets.
+                            Its users are artists, vendors, and fans. In this project we are helping True tickets develop a new
+                            mobile application for ticket buyers to have a better purchasing experience.</i> </h5>
                         </div>
                     </div>
                 </div>
@@ -182,36 +210,11 @@
             </div> <!-- End: .row -->
         </div> <!-- End: .container -->
     </div>
-    <!--End: 2nd Section  
-            - SERVICES PAGE 
+    <!--End: 2nd Section
+            - SERVICES PAGE
         ====================================-->
  
 
-    
-
-
-<!--
-
-    <div class=" section section-item combine-section hide-overlay invisionprototype-responsive overflow" style="background-image: url(images/invision_bg.jpg);"  id="services-section">
-       
-            <div class="container">
-                <div class="row">
-                   <!-- Start: Section Heading -->
-                <!--   <div class="col-sm-offset-1 col-sm-4 p-t-200">
-                       <br>
-                       <br>
-                       <br>
-                        <h3 style="color: #fcfcfc;" >Click and explore the application yourself! </h3>
-                   </div>
-                    <div class="col-sm-offset-1 col-sm-5 p-l-50">
-                        
-                            <iframe style="transform: scale(0.6)"  width="438" height="930" src="https://invis.io/DRPI7HQQPU5" frameborder="0" ></iframe>-->
-                <!--    </div>-->
-                    <!-- End: Section Heading -->
-                              <!--      </div> <!-- End: .row -->
-                         <!--       </div> <!-- End: .container -->
-       
-                   <!--     </div>-->
 
 
     <div class=" section section-item semi-dark-background">
@@ -219,119 +222,189 @@
             <div class="container ">
                     <div class="row  semi-dark-background">
                 <!-- Start: Section Heading -->
-                <div class="col-sm-10 col-sm-offset-1">
-                    <div style="text-align:center;">
+                <div >
+                    <div style="text-align:left;">
                         <div class="subtitle p-l-50 p-r-50 p-t-50 p-b-50">
                             <h3>Process Work</h3>
-                                <h4>Step 1: Interview & Behavior Map</h4>
-                                <h5>We interviewed 10 people to better understand our target customers. To understand this we constructed a behavior map.</h5>
-                                        <div class="image text-center">
-                                                <img src="images/trueticket_behaviormap.png" alt="Features Image" >
+                            <div class="row">
+                                <div class="col-sm-2 ">
+                                    <p> <br>Step 1 <br> Interview &<br>Behavior map</p>
+                                </div>
+                                <div class="col-sm-10">
+                                    <h5>At the discovery phase of this project, we conducted user interviews in order to have a better understanding of the problem. We started the interview by asking 2 closed-ended questions to understand their basic preferences, then asked more relative open-ended questions. Based on interviews' habits and preferences of buying tickets, we constructed a behavior map. </h5><div class="image text-center">
+                                            <img src="images/trueticket_behaviormap.png" alt="Features Image" >
+                                        </div>
+                                        <br>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2 ">
+                                    <br>
+                                    <p> Step 2 <br> Persona</p>
+                                </div>
+                                <div class="col-sm-10">
+                                    <h5>To have a more clear concept of the target customer, we set up a persona based on the interview and behavior map. With the main information of background, preferences and critical needs, We referred to Matt throughout the entire product development process. </h5>
+                                    <div class="image text-center">
+                                        <img src="images/trueticket_persona.png" alt="Features Image" >
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2 ">
+                                    <br>
+                                    <p> Step 3 <br> Journey Map</p>
+                                </div>
+                                <div class="col-sm-10">
+                                    <h5>To understand the user journey, we tested users with prototypes and a few open-ended questions. By observing their feeling and knowing their feedback, we thought an analyzed the important characteristics required in the application. </h5>
+                                    <div class="image text-center">
+                                        <img src="images/trueticket_journeymap.png" alt="Features Image" >
                                             </div>
-                                            <br>
-                                            <h4>Step 2: Persona</h4>
-                                            <h5>Based on the behavior map, we created a Persona. The handsome Matt.</h5>
-                                            <div class="image text-center">
-                                                    <img src="images/trueticket_persona.png" alt="Features Image">
-                                                </div>
-                                                <br>
-                                                <h4>Step 3: Journey Map</h4>
-                                                <h5>We analyzed the whole process from Matt's perspective to better understand the important charecteristics required in an application.</h5>
-                                                <div class="image text-center">
-                                                        <img src="images/trueticket_journeymap.png" alt="Features Image">
-                                                    </div>
-                                                    <br>
-                                                <h4>Step 4: Wireframe</h4>
-                                                <h5>
-                                                    Based on the Persona and Journey Map we started designing the first draft of the application.</h5>
-                                                <div class="image text-center">
-                                                        <img src="images/trueticket_wireframe.png" alt="Features Image">
-                                                    </div>
-                                                    
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2 ">
+                                    <br>
+                                    <p> Step 4 <br> Sketches &<br> Wireframe</p>
+                                </div>
+                                <div class="col-sm-10">
+                                    <h5>After understanding the key features that are needed in the application, each of our team members drew a sketch based on our understanding and thinking. With five versions of the sketch, we then started to express our own thinking and to discuss each page and function. After a lively discussion, we came out with a version that combines all our ideas. And we turned it into our first wireframe. </h5>
+                                    <div class="image text-center">
+                                        <img src="images/trueticket_wireframe.png" alt="Features Image" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2 ">
+                                    <br>
+                                    <p> Step 5 <br> Usability test</p>
+                                </div>
+                                <div class="col-sm-10">
+                                    <h5>We found some target customers and let them have a usability test. We started the test from having a pre-test questionnaire and we asked them to perform a few tasks on our design. And during the performing, they not only clicked the button but also shared what they are trying to find and what they expect to see after each action. And Based on the test result, we redesigned our wireframe and test again.</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- End: Section Heading -->
-                    </div>
             </div>
         </div>
     </div>
-    <!--End: 3rd Section  
+    <!--End: 3rd Section
     - Portfolio PAGE
 ====================================-->
-    <div class=" section section-item semi-dark-background" style="text-align:center;">
-        <div class="row dark-background">
-            <div class="image text-center">
-                <div class=" col-sm-offset-1 col-sm-4">
-                    <div class="image text-center p-t-50 p-b-50">
-                        <img src="images/trueticket_explore_1.png" style="width: 90%">
+  
+    <div class=" section section-item dark-background" >
+            <div class="inner-container " >
+                <div class="container ">
+            <div style="text-align:left;">
+                <div class="subtitle p-l-50 p-r-50 p-t-50 p-b-50">
+                    <h3>Final Result</h3>
+                    <div class="row ">
+                        <div class="image text-center">
+                            <div class="col-sm-6">
+                                <div class="image text-center p-t-50 p-b-50">
+                                    <img src="images/trueticket_explore_1.png" style="width:100%">
+                                </div>
                             </div>
+                        </div>
+                        <div class=" col-sm-offset-1 col-sm-5 p-t-150">
+                            <h4><b>Explore<b></h4>
+                            <h5>Matt is a big fans of Charlie Puth. Based on his preferences, we recommend him all the Charlie Puth's and relative singers' upcoming events. </h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-sm-4 p-t-150" >
+                            <h4><b>Booking</b></h4>
+                            <h5>Matt decides to attend a Charlie Puth concert and he is able to buy the ticket in 3 easy steps.</h5>
+                        </div>
+                        <div class="image text-center">
+                            <div class="col-sm-8 p-t-50 p-b-50">
+                                <div class="image text-center">
+                                    <img src="images/trueticket_booking.png" style="width: 100%">
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="image text-center">
+                            <div class=" col-sm-6 p-t-50 p-b-50">
+                                <div class="image text-center">
+                                    <img src="images/trueticket_ticket_1.png" style="width: 100%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-offset-1 col-sm-5 p-t-150" >
+                            <h4><b>Ticket Manage</b></h4>
+                            <h5>Once he finishes booking his ticket he gets a E-ticket for the same. Matt is thrilled to see the resale and refund option which he can choose incase an emergency situation arises.</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 p-t-150">
+                            <h4><b>Community</b></h4>
+                            <h5>Matt gets excited when he sees Charlie Puth is connecting with the fans and giving out details about the event on the application.</h5>
+                        </div>
+                        <div class="image text-center">
+                            <div class="col-sm-8 p-t-50 p-b-50">
+                                <div class="image text-center">
+                                    <img src="images/trueticket_community.png" style="width: 100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="image text-center">
+                            <div class=" col-sm-6 p-t-50 p-b-50">
+                                <div class="image text-center">
+                                    <img src="images/trueticket_portfolio_1.png" style="width: 100%">
+                                </div>
+                            </div>
+                        </div>
+                    <div class=" col-sm-offset-1 col-sm-5 p-t-150" >
+                        <h4><b>Profile</b></h4>
+                        <h5>Matt can see all his favorite artists and events in his profile. </h5>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-5 p-t-100" style="text-align:center;">
-                <h3>Explore</h3>
-                <h5>Matt is a big fans of Charlie Puth. Based on his preferences, we recommend him all the Charlie Puth's and relative singers' upcoming events. </h5>
+        </div>
+  </div>
+                            <div class=" section section-item semi-dark-background" >
+                                
+                                    <div class="inner-container " >
+                                        <div class="container ">
+                                            <div style="text-align:left;">
+                                                <div class="subtitle p-l-50 p-r-50 p-t-50 p-b-50">
+                                                    <h3>Next Step</h3>
+                                                
+                                                    <div class="row ">
+                                                        
+                                                        <div class="col-sm-6">
+                                                            
+                                                            <h5>Since this is only a three months project, there are still many things can be improved. If the time is available, I want to ... <br>
+                                                                1. Do more interviews before start the project, since the interviews we had is not enough for clarifying a  clear type of target customer. I would like to spend more time on interviewing more people next time.<br>
+                                                                2. Think more details of the resale function. Since it is one of the main features of our platform, I would want to think more detail about it, such us how do customers set the resale price.
+                                                            </h5>
+                                                        
+                                                        </div>
+                                                        <div class="image text-center">
+                                                            <div class=" col-sm-6 p-t-25">
+                                                                <div class="image text-center">
+                                                                    <img src="images/trueticket_groupphoto.jpg" style="width:100%">
+                                                                        <p>Our team photo with True Ticket's CEO and our course professor.</p>
+                                                                        </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
             </div>
         </div>
-        <div class="row semi-dark-background">
-            <div class="col-sm-offset-1 col-sm-3 p-t-100 p-l-50">
-                <h3>Booking</h3>
-                <h5>
-                    Matt decides to attend a Charlie Puth concert and he is able to buy the ticket in 3 easy steps.</h5>
-            </div>
-            <div class="image text-center">
-                <div class=" col-sm-offset-1 col-sm-5 p-t-50 p-b-50">
-                    <div class="image text-center">
-                        <img src="images/trueticket_booking.png" style="width: 100%">
-                            </div>
-                </div>
-            </div>
-        </div>
-        <div class="row dark-background">
-            <div class="image text-center">
-                <div class=" col-sm-offset-1 col-sm-4 p-t-50 p-b-50">
-                    <div class="image text-center">
-                        <img src="images/trueticket_ticket_1.png" style="width: 100%">
-                            </div>
-                </div>
-            </div>
-            <div class="col-sm-5 p-t-100">
-                <h3>Ticket Manage</h3>
-                <h5>Once he finishes booking his ticket he gets a E-ticket for the same. Matt is thrilled to see the resale and refund option which he can choose incase an emergency situation arises.
-                </h5>
-            </div>
-            
-        </div>
-        <div class="row  semi-dark-background">
-            <div class="col-sm-offset-1 col-sm-3 p-t-50">
-                <h3>Community</h3>
-                <h5>
-                    Matt gets excited when he sees Charlie Puth is connecting with the fans and giving out details about the event on the application.</h5>
-            </div>
-            <div class="image text-center">
-                <div class=" col-sm-offset-1 col-sm-5 p-t-50 p-b-50">
-                    <div class="image text-center">
-                        <img src="images/trueticket_community.png" style="width: 100%">
-                            </div>
-                </div>
-            </div>
-        </div>
-        <div class="row dark-background">
-            <div class="image text-center">
-                <div class=" col-sm-offset-1 col-sm-4 p-t-50 p-b-50">
-                    <div class="image text-center">
-                        <img src="images/trueticket_portfolio_1.png" style="width: 100%">
-                            </div>
-                </div>
-            </div>
-            <div class="col-sm-5 p-t-100">
-                <h3>Profile</h3>
-                <h5>
-                    Matt can see all his favorite artists and events in his profile. </h5>
-            </div>
-            
-        </div>
-    </div>
     <!--Start: 3rd Section
      - Portfolio PAGE
      ====================================-->
@@ -342,14 +415,14 @@
 
 
 
-    <!-- SCRIPTS 
+    <!-- SCRIPTS
 ========================================-->
     <script src="js/plagin-js/jquery-1.11.3.js"></script>
     <script src="js/plagin-js/preloader.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/plagin-js/plagin.js"></script>
 
-    <!-- Custom Script 
+    <!-- Custom Script
 ==========================================-->
     <script src="js/custom-scripts.js"></script>
 
