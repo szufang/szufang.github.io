@@ -727,8 +727,8 @@ section.section {
   font-size: 17px;
   text-align: center;
   margin-right: 15px;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   padding: 3px;
   border-radius: 50%;
   font-size: 14px;
@@ -736,8 +736,7 @@ section.section {
 }
 .social-icon li a,
 .social-icon li a:hover {
-  color: #202020;
-  background-color: #9c9c9c;
+  color: #9c9c9c;
 }
 .social-icon li:last-child a {
   margin-right: 0px;
