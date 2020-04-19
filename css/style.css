@@ -485,7 +485,7 @@ section.section {
 }
 .btn.btn-border:hover {
   background-color: #b5965b;
-  color: #404040;
+  color: #fcfcfc;
 }
 .btn-mask,
 .btn-nav {
@@ -1405,6 +1405,7 @@ section.section {
 .nav-trigger:focus {
   outline: 0 !important;
 }
+
 /**
  * ========================================
  * Home Section Style
