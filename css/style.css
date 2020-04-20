@@ -216,7 +216,7 @@ a:focus {
   -moz-background-size: cover;
   -webkit-background-size: cover;
 }
-.body-video-bg > .section-video {
+.body-video-bg .section-video {
   position: fixed;
   top: 0;
   left: 0;
@@ -1053,6 +1053,7 @@ section.section {
  * Top Navigation
  * =======================
  */
+
 .main-navbar-top {
   border: 0px solid;
   -o-transition: all 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -3579,6 +3580,7 @@ section.section {
   -webkit-transform: translate3d(0px, -110%, 0px);
   transform: translate3d(0px, -110%, 0px);
 }
+
 .each-portfolio-heading .heading-text .line {
   -o-transform: translate3d(0px, -110%, 0px);
   -ms-transform: translate3d(0px, -110%, 0px);
