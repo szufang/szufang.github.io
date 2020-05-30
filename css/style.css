@@ -4429,3 +4429,7 @@ section.section {
   color: #b5965b;
   font-weight: bold;
 }
+#menu .purple ul li a.current {
+  color: #511d69;
+  font-weight: bold;
+}
