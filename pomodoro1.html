@@ -13,6 +13,14 @@
         gtag('js', new Date());
         gtag('config', 'UA-143883816-1');
     </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            // Hook up the current state to the nav bar
+            $('.page-navigation').onePageNav();
+
+        });
+    </script>
     <!-- TITLE OF SITE -->
     <title>Focus To-Do | Szu-Fang</title>
     <!-- Meta -->
@@ -67,36 +75,14 @@
     <nav class="navbar navbar-fixed-top main-navbar-top navbar-top-js" id="main-navbar-top">
         <div class="container relative">
             <div class="navbar-header">
-
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <h4> <a href="#top" style="color: #B5965B;"> &nbspFocus To-Do&nbsp&nbsp&nbsp&nbsp</a>
                         </h4>
-
-                        <!--   </li>
-                    <li><a class="btn-nav" href="#project-detail">About</a></li>
-                    <li><a class="btn-nav" href="#project-overview">Overview</a></li>
-                    <li><a class="btn-nav" href="#process-work">Process Work</a></li>
-                    <li><a class="btn-nav" href="#final-design">Final Design</a></li>
-                    <li><a class="btn-nav" href="#conclusion">Reflection</a></li>-->
                 </ul>
-
                 <!-- TEMPLATE LOGO LIGHT -->
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-responsive"></a>
-
             </div>
-
-            <!-- Main Menu List -->
-            <!--
-<div class="navbar-collapse" id="js-navbar-menu">
-<ul class="nav navbar-nav navbar-right" id="navbar-nav">
-<li><a class="btn-nav" href="iOrder.html">Intro</a></li>
-<li><a class="btn-nav" href="#portfolio-web-section">Website</a></li>
-<li><a class="btn-nav" href="#iOrder">Mobile App</a></li>
-</ul>
-</div>-->
-
-
             <!-- Right Side Navigation Button -->
             <!-- Right Side Navigation Button -->
             <div class="navbar-collapse-right ">
@@ -112,53 +98,57 @@
     </nav>
     <!-- End: Navbar Area
 ============================= -->
+    <nav class="hidden-sm hidden-xs " id="menu">
+        <ul>
+            <li><a class=" btn-scroll" href="#overview" class="current">OVERVIEW</a></li>
+            <li><a class=" btn-scroll" href="#research">RESEARCH</a></li>
+            <li><a class=" btn-scroll " href="#ideation">IDEATION</a></li>
+            <li><a class=" btn-scroll " href="#prototype">PROTOTYPE</a></li>
+            <li><a class=" btn-scroll " href="#design">DESIGN</a></li>
+            <li><a class=" btn-scroll " href="#reflection">REFLACTION</a></li>
+        </ul>
+    </nav>
 
     <!--Start: 1st Section
             - HOME PAGE
         ====================================-->
     <div class="section section-item home-section overflow hide-overlay bg-image-1 wow "
-        style="background-image: url(images/pomodoro_background2.jpg);" id="top">
+        style="background-image: url(images/pomodoro_background1.png);" id="top">
         <div class="inner-container ">
-            <div class="container">
+            <div class="">
                 <div class="row">
-
-                    <div class="col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
-
+                    <div class="col-md-3 col-sm-10 col-sm-offset-1 col-xs-12">
                         <div class="home-content-outer text-left">
-
                             <div class="overflow">
                                 <div class="heading-outer">
-                                    <div class="heading-outer">
-                                        <div class="overflow p-t-50 p-l-10 p-r-60 p-b-40">
+                                    <div class="">
+                                        <div class="overflow p-t-50  p-r-60 p-b-40">
                                             <div class="section-heading-outer">
-                                                <h1 class="heading"><span class="color" style="color: #595959;">Focus
+                                                <h1 class="heading"><span class="color" style="color: #B5965B;">Focus
                                                         To-Do</h1>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="overflow">
                                 <div class="list-view">
                                     <ul class="nav">
                                         <h5 style="color: #3e3e3e;">Rethinking how to increase users willingness to
                                             manage
-                                            their time with FOCUS TO-DO.
+                                            their time with Focus To-Do.
                                         </h5>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                     <!-- Next Section Arrow -->
                     <div class="footer-button">
                         <div class="overflow m-t-30">
                             <div class="btn-form-outer btn-scroll">
                                 <!-- Button Area -->
-                                <a href="#project-detail" class="btn"><i class="icon icon-arrow-carrot-down"></i></a>
+                                <a href="#start" class="btn"><i class="icon icon-arrow-carrot-down"></i></a>
                             </div>
                         </div>
                     </div>
@@ -171,644 +161,693 @@
         ====================================-->
 
     <!--Start: 2nd Section
-        - SERVICES PAGE
+            - SERVICES PAGE
         ====================================-->
-
-    <div class=" section section-item combine-section hide-overlay overflow dark-background" id="project-detail">
+    <div class=" section section-item combine-section hide-overlay overflow dark-background" id="start">
         <div class="container">
-            <div class="row section-header">
-                <div class=" col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                    <div class="overflow">
-                        <div class="line-outer">
-                            <div class="line wow"></div>
-                        </div>
-                    </div>
-                    <div class="overflow">
-                        <div class="section-heading-outer m-b-15">
-                            <p class="sub-heading wow">ABOUT</p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="row p-l-100 p-r-100 p-t-100 ">
                 <!-- Start: Section Heading -->
-                <div class="col-md-3 col-sm-12 section-heading-outer ">
-                    <div>
-                        <div class="p-b-50 " style="text-align:center;">
-
-                            <p>TYPE</p>
-                            <h6>Individual project for <br> usable design course</h6>
-
-                        </div>
+                <div class="col-md-8 ">
+                    <div style="text-align:left;">
+                        <h5>Focus To-Do is a time management app that combines To-Do list with the Pomodoro
+                            Technique - one of the most popular productivity strategies.</h5><br>
+                        <h5>
+                            <b>A story about why I chose this app to redesign...</b>
+                        </h5>
+                        <h5>As a second-year master student, one of my challenges is to balance our time
+                            among submitting assignments, seeking jobs, and having fun. One day I was chatting
+                            with
+                            5 of
+                            my friends about how to squeeze more time out and have a grad trip. We accidentally found
+                            out that 4 of us had
+                            used Focus To-Do before with the hope of having better time
+                            management. However, none of us achieved the goal by using this app.
+                        </h5>
+                        <br><br>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-12 section-heading-outer">
-                    <div>
-                        <div class=" p-b-50" style="text-align:center;">
-                            <p>TIMELINE</p>
-                            <h6>3 month (Sep-Dec 2019)</h6>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12 section-heading-outer">
-                    <div>
-                        <div class="p-b-50" style="text-align:center; ">
-                            <p>TOOLS</p>
-                            <h6>Adobe XD, Pixlr, InVision</h6>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12 section-heading-outer">
-                    <div>
-                        <div class="  p-b-50" style="text-align:center;">
-
-                            <p>CONTRIBUTIONS</p>
-                            <h6>Research, BrainStorm, Wireframe, Visual Design</h6>
-                        </div>
-                    </div>
+                <div class="col-md-3 col-md-offset-1 " style="margin-top: 10pt;">
+                    <p>TYPE</p>
+                    <h6>Individual project for usable design course</h6>
+                    <p>KEY SKILLS</p>
+                    <h6>End-to-End UX Design,
+                        User Research,
+                        Competitve Ａnalysis,
+                        Product Strategy</h6>
+                    <p>TIMELINE</p>
+                    <h6>3 month (Jan-Mar 2020)</h6>
+                    <p>TOOLS</p>
+                    <h6>Sketch, Pixlr</h6>
                 </div>
                 <!-- End: Section Heading -->
             </div> <!-- End: .row -->
-        </div> <!-- End: .container -->
-    </div> <!-- End: . -->
+        </div>
+        <div id="container">
+            <div class="container">
+                <div class="row p-l-100 p-r-100 p-t-50 subtitle" id="overview">
+                    <!-- Start: Section Heading -->
+                    <div class="col-md-12 ">
+                        <h3 style="color: #B5965B;"><b>01. Overview</b></h3>
 
-    <!--End: 2nd Section
-        - SERVICES PAGE
-        ====================================-->
-
-    <!--Start: 2nd Section
-            - SERVICES PAGE
-        ====================================-->
-    <div class=" section section-item semi-dark-background" id="services-section">
-        <div class="container">
-            <div class="row section-header ">
-                <!-- Start: Section Heading -->
-
-                <div style="text-align:center;">
-                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                        <div class="overflow">
-                            <div class="line-outer">
-                                <div class="line wow"></div>
-                            </div>
-                        </div>
-                        <div class="overflow">
-                            <div class="section-heading-outer m-b-15">
-                                <p class="sub-heading wow">BACKGROUND</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row col-md-12 p-l-50 p-r-50 p-b-100 section-heading-outer">
-
-                        <h5>5 of my friends and I want to manage our time better, so we downloaded Focus To-Do, a time
-                            management app. However, within a week, most of us stop using it. Some people is not used to
-                            manage their time while others decide to try other similar app.
+                        <p class="p-t-50"><b>PROBLEM STATEMENT</b></p>
+                        <h4><b>
+                                How Focus To-Do can help people build their time management habits?</b>
+                        </h4>
+                        <p></p>
+                        <h5>
+                            As a multitasker, I constantly try different productivity applications to improve
+                            my time management skills. Yet, I haven't found an application that has helped me to
+                            successfully build good habits.<p></p>
+                            How could I overcome this challenge and also help others in a similar situation?
+                            I started to think about redesigning Focus To-Do, a fully funtional time
+                            management app that failed to keep me loyal to it.
                         </h5>
 
+                        <p class="p-t-50"><br>
+                            <b>SOLUTION</b>
+                        </p>
+                        <h4><b>
+                                Turning virtual efforts into real-world rewards: using coupons to motivate users.</b>
+                        </h4>
+                        <p></p>
+                        <h5>
+                            I began the project by understanding the market and interviewing users for
+                            deeper insight. Defining the problems and researching relative documents to
+                            create a solution concept. With the concept in mind, I visualized the ideas and iterated the
+                            design, which led me
+                            to deliver the final solution.
+                        </h5>
+                        <div class="image p-t-30 p-b-30">
+                            <img src="images/pomodoro_userflow_new.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row p-l-100 p-r-100 p-t-150  subtitle" id="research">
+                    <!-- Start: Section Heading -->
+                    <div class="col-md-12 ">
+                        <h3 style="color: #B5965B;"><b>02. Research</b></h3>
+
+                    </div>
+                    <div class="col-md-12 p-t-50">
+                        <p><b>COMPETITIVE ANALYSIS</b></p>
+                        <h4><b>Looking into the market, trying to find inspiration and gaps among the existing products.
+                            </b>
+                        </h4>
+                        <p></p>
+                        <h5>
+                            I used Appfollow, an application insight tool, to look into the app market and find
+                            competitive
+                            apps. Then chose 2 most
+                            similar apps that are in some way better than Focus To-Do to do
+                            the analysis.
+                        </h5>
+                        <div class="image  ">
+                            <img style="width: 50%;" src="images/pomodoro_competitors.png">
+                            <p>A screenshot from Appfollow dashboard.</p>
+                        </div>
+
+                        <div class="row p-l-50 p-r-50 p-t-30 p-b-30">
+                            <div class="col-md-4 ">
+                                <div class="row">
+                                    <div class="col-md-3 img"> <img style="width: 90%;"
+                                            src="images/pomodoro_competitor_focustodo.png"></div>
+                                    <div class="col-md-9 ">
+                                        <h5>Focus To-Do</h5>
+                                    </div>
+                                </div>
+                                <h6 style="font-weight: 100; line-height:inherit;">
+                                    Pros:
+                                    <ul>
+                                        <li> Have more competitive time management relative report</li>
+                                        <li>Have To-do list</li>
+                                        <li> Have laptop version</li>
+
+
+                                    </ul>
+                                    Cons:
+                                    <ul>
+                                        <li>Task and timer need to be set in seperate page</li>
+                                        <li> Unclear timer setting method
+                                        </li>
+                                    </ul>
+                                </h6>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="row">
+                                    <div class="col-md-3 img"> <img style="width: 90%;"
+                                            src="images/pomodoro_competitor_befocused.png"></div>
+                                    <div class="col-md-9 ">
+                                        <h5>Be Focused</h5>
+                                    </div>
+                                </div>
+                                <h6 style="font-weight: 100; line-height:inherit;">
+                                    Pros:
+                                    <ul>
+                                        <li> User can setup the task and timer in the main page</li>
+                                        <li>Have to-do list</li>
+                                        <li> Have laptop version</li>
+
+
+                                    </ul>
+                                    Cons:
+                                    <ul>
+                                        <li>Too many advertisements</li>
+                                        <li> Interface design is over simple
+                                        </li>
+                                    </ul>
+                                </h6>
+                            </div>
+                            <div class="col-md-4 ">
+                                <div class="row">
+                                    <div class="col-md-3 img"> <img style="width: 90%;"
+                                            src="images/pomodoro_competitor_focuskeeper.png"></div>
+                                    <div class="col-md-9 ">
+                                        <h5>Focus Keeper</h5>
+                                    </div>
+                                </div>
+                                <h6 style="font-weight: 100; line-height:inherit;">
+                                    Pros:
+                                    <ul>
+                                        <li>Clear timer setting method</li>
+                                    </ul>
+                                    Cons:
+                                    <ul>
+                                        <li>Do not have to-do list</li>
+                                        <li>Do not laptop version</li>
+
+                                    </ul>
+                                    </65>
+                            </div>
+                        </div>
+                        <div
+                            style=" background:linear-gradient(to top left, #FFf5EE 0%, #FFFFFF 100%); border-radius: 15px;">
+                            <div class="p-t-30 p-l-30 p-r-30 p-b-30">
+                                <h4 style="color: #B5965B;"><img src="images/visibility.png">
+                                    What are the products in the market now? </h4>
+                                <h5>Combining their pros, a good app should have<br>
+                                    1) the to-do list and time management relative report.<br>
+                                    2) clear setting function for users to set up the timer and task.<br>
+                                    However, none of these apps provide a function to help users build up time
+                                    management
+                                    habits. </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 p-t-100 p-b-100 text-center">
+                        <hr>
+                        <h3 style="color:#a7a7a7; font-weight: 10;"><i>"As a designer, I know that I shouldn't design
+                                for myself.
+                                I cannot assume that the problem
+                                is
+                                widespread enough that it's worth the effort to design something to solve it." </i></h3>
+                        <hr>
+                    </div>
+                    <div class="col-md-12 ">
+                        <p>
+                            <b>INTERVIEWS & PERSONAS</b>
+                        </p>
+                        <h4><b>Thinking from the users, discovering their needs. </b>
+                        </h4>
+                        <p></p>
+                        <h5>To
+                            quickly
+                            understand whether this is a problem worth solving, I tried
+                            to understand more about the challenges that arose while people use this kind of mobile
+                            application. I conducted quick, semi-structured interviews with 5 random people and came up
+                            with
+                            the
+                            persona.
+                        </h5>
+                        <div class="image p-t-30 p-b-30"> <img style="width: 50%;" src="images/pomodoro_persona.png">
+                        </div>
+                        <div
+                            style=" background:linear-gradient(to top left, #FFf5EE 0%, #FFFFFF 100%); border-radius: 15px;">
+                            <div class="p-t-30 p-l-30 p-r-30 p-b-30">
+                                <h4 style="color: #B5965B;"><img src="images/visibility.png">
+                                    What are the users' needs?</h4>
+                                <h5>
+                                    For new users, it is a challenge for them to build up the routine to use the time
+                                    management app; while for people who already have time management habit, they hope
+                                    the
+                                    app is easy to use and can provide have
+                                    time analysis report, allowing them to track and improve their skill better. </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-12 p-t-100">
+                        <p><br>
+                            <b>ONLINE REVIEWS & JOURNEY MAP</b>
+                        </p>
+                        <h4><b>Back to the product, what is the gap between user goals and pain points?</b>
+                        </h4>
+                        <p></p>
+                        <h5> With users' needs in mind, I started to look back into Focus To-Do. Looking at the entire
+                            experience from user's standpoint, thinking of the problems it may have, and also
+                            identifying
+                            some
+                            potential opportunities for the product. </h5>
+
+                        <div class="image p-t-30 p-b-30 ">
+                            <img style="width: 80%;" src="images/pomodoro_journeymap.png"></div>
+                        <br>
+                        <h5> I also read through online reviews on both Google Play
+                            and
+                            App Store to make sure that I have covered all the problems of this app. </h5>
+                        <br>
+                        <div class="image p-t-30 p-b-30">
+                            <img style="width: 70%;" src="images/pomodoro_reviews1.png"></div>
+
+                        <div
+                            style=" background:linear-gradient(to top left, #FFf5EE 0%, #FFFFFF 100%); border-radius: 15px;">
+                            <div class="p-t-30 p-l-30 p-r-30 p-b-30">
+                                <h4 style="color: #B5965B;"><img src="images/visibility.png">
+                                    What are the problems for Focus To-Do?</h4>
+                                <p></p>
+
+
+                                <h5><b>Problem 1: Unintuitive and confusing user experience.
+                                    </b><br>
+
+                                    Inefficient ways of presentations make the majority of the information displayed on
+                                    the main page irrelevant to user needs.
+                                    The overused icons without any explanation also create obstacles to users. The
+                                    unintuitive design hurts users' experience, which in turn
+                                    leads users
+                                    to switch to other time management app. </h5>
+
+                                <p></p>
+                                <h5><b>Problem 2: The theme colors limit potential users.
+                                    </b><br>
+                                    Theme colors and the app style are also two of the main concerns for users
+                                    when deciding to use the app or not. The bright pink
+                                    color themes
+                                    for this app had reduced some users' willingness to use it.</h5>
+
+                                <p></p>
+                                <h5><b>Problem 3: Cannot help new users to build up the time management habit.
+                                    </b><br>Lack of
+                                    consistency and
+                                    motivation are two of the most common problems that stop people from pursuing a
+                                    new
+                                    habit. As a human being, it is natural for us to revert to familiar structures.
+                                    Building
+                                    a new habit usually often takes extra effort, and people tend to avoid
+                                    effort.</h5>
+                                <p></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row p-l-100 p-r-100 p-t-150 subtitle" id="ideation">
+                    <!-- Start: Section Heading -->
+                    <div class="col-md-12 ">
+                        <h3 style="color: #B5965B;"><b>03. Ideation</b></h3>
+                    </div>
+                    <div class="col-md-12 p-t-50">
+                        <p><br>
+                            <b>BRAINSTORMING</b>
+                        </p>
+                        <h4><b>To turn problems into opportunities.</b>
+                        </h4>
+                        <h5>After understanding the problems, it is time to think about how to use design to turn
+                            problems into opportunities. </h5>
+
+                        <div class="row p-t-30">
+                            <div class="col-md-4 col-sd-12 ">
+                                <h5 style="color: gray;"><b><i>" How to make the design intuitive? "
+                                        </i></b>
+                                </h5>
+                            </div>
+                            <div class="col-md-7 col-md-offset-1 col-sd-12  ">
+                                <h5><b>INSIGHT 1: DESIGN FROM MENTAL MODEL</b><br>Lack of visual content and
+                                    unfriendly flow design create obstacles to users. Designed based on users'
+                                    mental models.
+                                    Simplified the user flow and reorganized the information is the solution.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="row p-t-30">
+                            <div class="col-md-4 col-sd-12 ">
+                                <h5 style="color: gray;"><i><b>" What is the color that can be accepted by more
+                                            users
+                                            and also is a color
+                                            that
+                                            can help
+                                            users
+                                            to focus? " </b></i></h5>
+                            </div>
+                            <div class="col-md-7 col-md-offset-1  col-sd-12  ">
+                                <h5><b>INSIGHT 2: DESIGN FOR EVERYONE</b><br>After researching, the neutral tone is
+                                    my answer. With a high
+                                    acceptance, the
+                                    neutral
+                                    tone also provides a calming effect which is a plus to concentrate.
+
+                                </h5>
+                            </div>
+                        </div>
+
+                        <div class="row p-t-30">
+                            <div class="col-md-4 col-sd-12 ">
+                                <h5 style="color: gray;"><i><b>" How can an application help people build up
+                                            a
+                                            habit? " </b></i></h5>
+                            </div>
+                            <div class="col-md-7 col-md-offset-1 col-sd-12  ">
+                                <h5><b>INSIGHT 3: DESIGN FOR HABIT-FORMING</b><br>There is a 3R principle
+                                    (reminder,
+                                    routine, and reward) for building and maintaining
+                                    habits.
+                                    The app already had the first two R's, so my solution focused on “reward" to
+                                    attract and
+                                    motivate users to keep managing their time with this app. I created a new coupon
+                                    feature,
+                                    letting users earn real-world discounts by accumulating their focused time.
+                                </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row p-l-100 p-r-100 p-t-150  subtitle" id="prototype">
+                    <!-- Start: Section Heading -->
+                    <div class="col-md-12 ">
+                        <h3 style="color: #B5965B;"><b>04. Prototype</b></h3>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="p-t-50">
+                            <b>SKETCH</b>
+                        </p>
+                        <h4><b>Visualize the ideas. </b>
+                        </h4>
+                        <h5>Based on the insights I had come up with, I started to think about the opportunities that I
+                            can turn the
+                            ideas into reality and sketched them up quickly.
+                            <ul>
+                                <li>Redefining the countdown timer on the main page.</li>
+                                <li>Recategorizing the information and reorganized the list page.</li>
+                                <li>Redesigning the adding function.</li>
+                                <li>Replacing bright pink colors to neutral colors</li>
+                                <li>Created a new coupon feature, so people can use the focusing time that they
+                                    accumulated to exchange to real-world discounts.</li>
+
+                            </ul>
+                        </h5>
+
+                        <div class="text-center">
+                            <img class="p-t-30 p-b-30 " style="width: 60%;" src="images/pomodoro_sketch1.png">
+                        </div>
+                        <p class="p-t-100">
+                            <b>PROTOTYPE</b>
+                        </p>
+                        <h4><b>Think key elements into detail. </b>
+                        </h4>
+                        <h5>After defined and design the main function of each page, I began mapping the new user
+                            journey. Thinking about the user flow and also creating more details for each page. </h5>
+
+                        <div class="row p-t-30 p-b-30 text-center">
+                            <img style="width: 80%;" src="images/pomodoro_wireframe.png">
+                        </div>
+                        <p class="p-t-100">
+                            <b>USABILITY TESTING</b>
+                        </p>
+                        <h4><b>Test with users to make sure the design is following the mental model. </b>
+                        </h4>
+                        <h5>Followed Steve Krug’s template and KJ analysis as my usability testing,I hold the test and
+                            analyzed the result in order to make the solution close to users' mental models.</h5>
+                        <br>
+                        <div class="text-center">
+                            <a href="Pomodoro Usability Test Report.pdf" target="_blank"
+                                class="btn btn-mask text-center"
+                                style="background-color: #f3f3f3; padding: 0px 15px 0px 15px; border-radius: 15px;">
+                                Usability
+                                Testing
+                                Rrport (.pdf)</a>
+                        </div>
+                        <br>
+                        <div class="image text-center m-t-30 m-b-50">
+                            <div class="row">
+                                <div class="col-md-6 col-sd-6">
+                                    <img src="images/pomodoro_usabilitytest1.jpg">
+                                </div>
+                                <div class="col-md-6 col-sd-6">
+                                    <img src="images/pomodoro_usabilitytest2.jpg">
+                                </div>
+                            </div>
+
+                        </div>
+                        <p class="p-t-100">
+                            <b>REPEAT</b>
+                        </p>
+                        <h4><b>Iterate to have a better solution.</b>
+                        </h4>
+                        <h5>I iterated the design from time to time by acting on user feedback. The iterations covered
+                            from a page layout to a simple small piece.</h5>
                         <br>
 
-                        <p><b>THE PAIN POINT</b></p>
-
-                        <h4><mark><b>80% of users indicated that they had a certain degree of difficulty when they
-                                    started
-                                    to
-                                    this app.
-                                </b> </mark></h4><br>
-
-                        <img style="width: 100%;" src="images/pomodoro_userflow.png">
-
-                        <p><b>PROJECT GOAL</b></p>
-                        <h4><mark><b>Redesigning the experience for Focus To-Do to raise the user
-                                    retention rate.
-                                </b> </mark></h4>
-
-                    </div>
-                </div>
-
-                <!-- End: Section Heading -->
-            </div> <!-- End: .row -->
-        </div> <!-- End: .container -->
-    </div>
-    <!--End: 2nd Section
-            - SERVICES PAGE
-        ====================================-->
-
-    <!--
-    <div class=" section section-item semi-dark-background " id="project-overview">
-        <div class="inner-container " id="portfolio-web-section">
-            <div class="container ">
-                <div class="row ">
-                    <div>
-                        <div style="text-align:center;">
-                            <div class="section-header col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                                <div class="overflow">
-                                    <div class="line-outer">
-                                        <div class="line wow"></div>
-                                    </div>
-                                </div>
-                                <div class="overflow">
-                                    <div class="section-heading-outer p-b-50 ">
-                                        <p class="sub-heading wow">DISPLAY</p>
-
-                                        <h5> The new design solution for Focus To-Do. </h5>
-
-                                        <div class="image text-center">
-                                            <br>
-                                            <img style="width: 30%;" src="images/Pemodoro.gif">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="row p-t-50 p-b-30">
+                            <div class="col-md-6 col-sd-6"> <a
+                                    herf="https://szufangwang.com/images/pomodoro_iteration_clock.png"
+                                    target="_blank"><img style="width: 100%;"
+                                        src="images/pomodoro_iteration_clock.png"></a></div>
+                            <div class="col-md-6 col-sd-6"> <img style="width: 100%;"
+                                    src="images/pomodoro_iteration_nav.png"></div>
+                        </div>
+                        <div class="row p-b-30">
+                            <div class="col-md-6 col-sd-6"> <img style="width: 100%;"
+                                    src="images/pomodoro_iteration_add.png"></div>
+                            <div class="col-md-6 col-sd-6"> <img style="width: 100%;"
+                                    src="images/pomodoro_iteration_coupon.png"></div>
 
                         </div>
+
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-    <div class=" section section-item dark-background" id="process-work">
-        <div class="inner-container " id="portfolio-web-section">
-            <div class="container ">
-                <div class="row  dark-background">
+                <div class="row p-l-100 p-r-100 p-t-150  subtitle" id="design">
                     <!-- Start: Section Heading -->
-                    <div>
-                        <div style="text-align:left;">
+                    <div class="col-md-12 ">
+                        <h3 style="color: #B5965B;"><b>05. Design</b></h3>
+                    </div>
+                    <div class="col-md-12">
 
-                            <div class="section-header col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                                <div class="overflow">
-                                    <div class="line-outer">
-                                        <div class="line wow"></div>
-                                    </div>
-                                </div>
-                                <div class="overflow">
-                                    <div class="section-heading-outer m-b-15">
-                                        <p class="sub-heading wow">DESIGN PROCESS</p>
-                                    </div>
-                                </div>
+                        <p class=" p-t-50">
+                            <b>DESIGN GOAL 1</b>
+                        </p>
+                        <h4><b>Simplify the user flow and use more neutral colors to raise acceptance. </b>
+                        </h4>
+
+                        <h5 class="p-t-30"><b>Reduce 3 clicks to 1 click</b><br>
+                            This design reduces users' cognitive load when they start a task timer. According to
+                            previous
+                            research, users feel lost when they want to create and start a task. Moving
+                            the timer to the first page, users can now start a task
+                            timer simply and quickly.</h5>
+                        <h5 class="p-t-30">
+                            <b> Create dark/bright mode</b><br>
+                            With the thought in mind of using more neutral colors, this design provides white and
+                            black
+                            background colors for users to choose from.
+                        </h5>
+                        <h5 class="p-t-30"><b>Add a navigation bar</b><br>
+                            The navigation bar provides users with a clear concept about what this app has and where the
+                            functions are. Users can now use the function they want directly.</h5>
+
+
+                        <div class="col-md-6 col-sd-12 text-center p-t-50 p-b-100">
+                            <br>
+                            <h6 style="color: gray;">Before</h6>
+                            <img style="width: 70%;" src="images/pomodoro_before_start.png">
+                        </div>
+                        <div class="col-md-6 col-sd-12 text-center p-t-50 p-b-150">
+                            <br>
+                            <h6 style="color: gray;">After</h6>
+                            <img style=" width: 70%;" src="images/pomodoro_design_main.png">
+                        </div>
+
+
+                        <p class=" p-t-100">
+                            <b>DESIGN GOAL 2</b>
+                        </p>
+                        <h4><b>Intuitive design and functions. </b>
+                        </h4>
+
+                        <h5 class="p-t-30"><b>Use labels to clarify unique icons</b><br>
+                            In this version, I created a new page for creating new tasks. Since this is one of the most
+                            frequent functions used, the information and functions should be expressed
+                            clearly.
+                            By putting relevant information into a list, users now know the meaning of each icon and how
+                            to
+                            adjust them.
+                            <br>
+                        </h5>
+                        <div class="p-t-30 p-b-100">
+                            <div class="col-md-6 col-sd-12 text-center p-t-50 p-b-100">
+                                <br>
+                                <h6 style="color: gray;">Before</h6>
+                                <img style="width: 70%;" src="images/pomodoro_before_add.png">
                             </div>
-
-
-
-                            <div class="row p-l-50 p-r-50 p-t-50 p-b-50">
-                                <div class="col-sm-12">
-                                    <!--<p>/ DISCOVER/</p>-->
-                                    <h3 style="text-align:center;">01. - Who are the target customers?</h3>
-                                    <h5 style="text-align:center;">
-                                        To understand the problems of people who needs time management I started with a
-                                        lot of searching online, to understand what is struggleing them and what they
-                                        care.
-                                        To have a deeper understand I also interview 5 people with different background.
-                                        Target users: a university student (junior/senior/ masters), a manager in a
-                                        company, a career woman with a baby.
-
-                                    </h5>
-                                    <div class=" image text-left">
-                                        <img class="" src="images/pomodoro_persona1.png">
-                                    </div>
-                                    <br>
-
-                                </div>
+                            <div class="col-md-6 col-sd-12 text-center p-t-50 p-b-100 ">
+                                <br>
+                                <h6 style="color: gray;">After</h6>
+                                <img style=" width: 70%;" src="images/pomodoro_design_add.png">
                             </div>
-                            <div class="row p-l-50 p-r-50 p-t-50 p-b-50">
-
-                                <div class="col-sm-12 ">
-                                    <h3 style="text-align:center;">01 1/2. - Understand the market.</h3>
-                                    <h5 style="text-align:center;">
-                                        I first looked into the market to examine whether existing time
-                                        management
-                                        applications can help people better manage their time. I also
-                                        observed
-                                        whether they have any special solutions to
-                                        attract users.
-                                    </h5>
-                                </div>
+                        </div>
+                        <h5 class="p-t-30"><b>Reorganize the information</b><br>
+                            I replaced the date list with a drop-down calendar and combined it with the To-Do task
+                            page.
+                            This
+                            simplifies the user flow and also makes the information easy for users to understand.
+                            <br>
+                        </h5>
+                        <div class="p-t-30 p-b-100">
+                            <div class="col-md-6 col-sd-12 text-center p-t-50 p-b-150">
+                                <br>
+                                <h6 style="color: gray;">Before</h6>
+                                <img style="width: 70%;" src="images/pomodoro_before_list.png">
                             </div>
-                            <div class="row p-l-50 p-r-50 p-t-50 p-b-50">
-                                <div class="col-sm-12 ">
-                                    <!-- <p> STEP 4 / DEFINE</p>-->
-                                    <h3 style="text-align:center;">03. - User Journey</h3>
-                                    <h5 style="text-align:center;">Before starting with the design and layout of our
-                                        features’
-                                        wireframes,
-                                        user
-                                        journey is also an important part that needs to be understood.
-                                        Through
-                                        this
-                                        step I
-                                        can learn more detailed feelings of users from each step.
-                                    </h5>
-                                    <div class="image text-center">
-                                        <img src="images/pomodoro_journeymap.png">
-                                    </div>
-                                    <div
-                                        style=" background:linear-gradient(to top left, #FFf5EE 0%, #FFFFFF 100%); padding: 0px 15px 0px 15px; border-radius: 15px;">
-                                        <div class=" p-t-30 p-l-30 p-r-30 p-b-30">
-                                            <h4 class="p-t-30" style="color: #B5965B;"><img src="images/visibility.png">
-                                                What are the problems?</h4>
-                                            <div class="row">
-                                                <div class="col-md-4 col-sm-12" style="padding-top:25px;">
-                                                    <img style="width: 90%;" src="images/pomodoro_problem1.png">
-                                                </div>
-                                                <div class="col-md-8 col-sm-12 ">
-                                                    <h5><b>Unfriendly experience when creating and starting a task
-                                                            timer.</b> Lack of visual content and unfriendly flow design
-                                                        create obstacle
-                                                        to users. The main page was simply a list without any main
-                                                        functions, which differs from
-                                                        most users' expectations. The main two functions - create a task
-                                                        and
-                                                        start
-                                                        a
-                                                        timer, are in other seperate pages. The unintuitive design hurts
-                                                        users
-                                                        experience, which in turn leads users to switch to other time
-                                                        management
-                                                        app.</h5>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-4 col-sm-12 ">
-                                                    <img style="width: 90%;" src="images/pomodoro_problem2.png">
-                                                </div>
-                                                <div class="col-md-8 col-sm-12 ">
-                                                    <h5><b>The theme color and style limit the recutment the potential
-                                                            users.</b> During the interview, I had noticed that theme
-                                                        color
-                                                        and the app
-                                                        style are also concedered when deciding whether to use the app.
-                                                        Furthermore, the bright pink theme color for this app had
-                                                        reduced some users willing to use it.</h5>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-4 col-sm-12 " style="padding-top:25px;">
-                                                    <img style="width: 90%;" src="images/pomodoro_problem3.png">
-                                                </div>
-                                                <div class="col-md-8 col-sm-12 ">
-                                                    <h5><b>Feel stressed to manage the time.</b> Lack of consistency and
-                                                        motivation are two of the most common problems that stop people
-                                                        from
-                                                        pursuing a new habit. As a human being, it is natural for us to
-                                                        revert to familiar structures. Building a new habit usually
-                                                        often
-                                                        takes extra effort, and people tend to avoid effort. Thus,
-                                                        helping
-                                                        users to build up their time management habit is also a key to
-                                                        increase the usage and user retention rate. (As this is a
-                                                        personal
-                                                        project, I have no quantitative data to back up this hypothesis,
-                                                        and
-                                                        only qualitative data collected from user interviews.)
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                </div>
+                            <div class="col-md-6 col-sd-12 text-center p-t-50 p-b-150">
+                                <br>
+                                <h6 style="color: gray;">After</h6>
+                                <img style=" width: 70%;" src="images/pomodoro_design_list.png">
                             </div>
-                            <div class="row p-l-50 p-r-50 p-t-50 p-b-50">
-                                <div class="col-sm-12 ">
-                                    <!-- <p> STEP 4 / DEFINE</p>-->
-                                    <h3 style="text-align:center;">04. - Brainstorming for the solutions.</h3>
-                                    <h5 style="text-align:center;"> To provide a better user experience, there are 3
-                                        things that I need to improved 1）user flow 2) color theme 3) help users to build
-                                        up a new habbit.
-                                    </h5>
+                        </div>
+                        <br>
 
-                                    <div class=" p-t-30 p-l-30 p-r-30 p-b-30">
-                                        <h5>
-                                            <ul>
-                                                <li><b>Reimagine users need for a time management system.</b>
-                                                    Inefficient ways of presentations make the majority of the
-                                                    information displayed on the main page irrelevant to user needs. To
-                                                    provide a better user experience design, I moved the functions of
-                                                    creating a task and starting the timer to the main page, which helps
-                                                    users to use the app more intuitively.
+
+                        <p class=" p-t-100">
+                            <b>DESIGN GOAL 3</b>
+                        </p>
+                        <h4><b>Create a coupon feature to help users form a habit.</b>
+                        </h4>
+                        <br>
+                        <h5><b>Turn focused time into real-world discounts</b><br>I created a new feature -- coupons.
+                            After one hour of use, the user is rewarded with 1 point. And the Points can be exchanged
+                            for coupons. So users can enjoy the rewards for their hard work.
+                            <br>
+                        </h5>
+
+                        <div class="col-md-6 col-sd-12 text-center p-t-50 p-b-150">
+                            <br>
+                            <p></p>
+                            <img style=" width: 70%;" src="images/pomodoro_design_coupon.png">
+                        </div>
+                        <div class="col-md-6 col-sd-12 text-center p-t-50 p-b-150">
+                            <br>
+                            <p></p>
+                            <img style=" width: 70%;" src="images/pomodoro_design_coupon_selected.png">
+                        </div>
+                        <p class=" p-t-100">
+                            <b>CROSS PLATFORM SOLUTION</b>
+                        </p>
+                        <h4><b>Users can focus anytime anywhere.</b>
+                        </h4>
+
+
+
+                        <div class="col-md-12 col-sd-12 text-center p-t-50 ">
+                            <br>
+                            <p></p>
+                            <img style=" width: 70%;" src="images/pomodoro_iMac_main.png">
+                        </div>
+                        <div class="col-md-4 col-sd-12 text-center p-t-30 ">
+                            <br>
+                            <p></p>
+                            <img style=" width: 100%;" src="images/pomodoro_iMac_todolist.png"><br><br>
+
+                        </div>
+                        <div class="col-md-4 col-sd-12 text-center p-t-30 ">
+                            <br>
+                            <p></p>
+
+                            <img style=" width: 100%;" src="images/pomodoro_iMac_coupon.png"><br><br>
+                        </div>
+                        <div class="col-md-4 col-sd-12 text-center p-t-30 ">
+                            <br>
+                            <p></p>
+
+                            <img style=" width: 100%;" src="images/pomodoro_iMac_add.png">
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row p-l-100 p-r-100 p-t-150 p-b-150 subtitle" id="reflection">
+                    <!-- Start: Section Heading -->
+                    <div class="col-md-12 ">
+                        <h3 style="color: #B5965B;"><b>06. Reflection</b></h3>
+                    </div>
+                    <div class="col-md-12 ">
+
+
+                        <h5 class=" p-t-30"><b>Don't make users think</b><br> I used to have a guide page in
+                            my
+                            initial version for
+                            the first time users. However, after the
+                            first usability test, I found out that users easily forget
+                            where to find the specific function. A
+                            good design should follow users' mental model and let them
+                            easily
+                            and
+                            quickly find the function they want. And also,
+                            although my app is based on a Pomodoro technique, I should not
+                            think
+                            that
+                            everyone using my application knows it. I should apply the
+                            technique in the app without letting users' learn, and let
+                            users'
+                            gain the benefit from the technique directly.</h5>
+                        <h5 class=" p-t-30 "> <b>User experience is not just only about the interface</b><br>
+                            While clarifying the problem, I have noticed that power consumption is also
+                            one of the issues. Since this is only a case study, I cannot communicate
+                            with the engineers to fix the problem. However, every small piece is can all
+                            influence the whole experience. It reminds me that when doing the project, I
+                            should always have a big picture and put more things into consideration, not
+                            just design.</h5>
+                        <!-- <li><b>Reframing problems</b> <br>In the very beginning, I thought
+                                                    this
+                                                    project is only an interface problem. I can solve the problem by
+                                                    providing a better interface design and user flow. However,
+                                                    after I
+                                                    talked with interviewees, I have found out that the core problem
+                                                    of the
+                                                    current situation is more about human factors. Thus, I need to
+                                                    redefine the problem and find the real problem that is behind the
+                                                    screen.
                                                 </li>
-
-                                                <li><b>Help users to conquer time management.</b> There is a 3R
-                                                    principle
-                                                    (reminder, routine, and reward) for building and maintaining habits.
-                                                    The app already had the first two R's, so my solution focused on
-                                                    “reward" to attract and motivate users to keep managing their time
-                                                    with this app. I created a new coupon feature, letting users earn
-                                                    real-world discounts by accumulating their focusing time.</li>
-                                                <li><b>Redesign the style for more users.</b> Redesigning the theme
-                                                    color
-                                                    and the whole style that is acceptable by more people.</li>
-                                            </ul>
-                                        </h5>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="row p-l-50 p-r-50 p-t-50 p-b-50">
-                                <div class="col-sm-12 ">
-                                    <!-- <p> STEP 5 / DESIGN</p>-->
-                                    <h3 style="text-align:center;">05. - Sketches &#38;Wireframe</h3>
-                                    <h5 style="text-align:center;">With my research findings and personas in mind, I
-                                        started to
-                                        brainstorm
-                                        and
-                                        design a solution that can solve current problems and increase
-                                        people's
-                                        interest.</h5>
-                                    <div class="image text-center">
-                                        <img src="images/pomodoro_wireframe.png">
-                                    </div>
-                                    <div
-                                        style=" background:linear-gradient(to top left, #FFf5EE 0%, #FFFFFF 100%); padding: 0px 15px 0px 15px; border-radius: 15px;">
-                                        <div class=" p-t-30 p-l-30 p-r-30 p-b-30">
-                                            <h4 class="p-t-30" style="color: #B5965B;"><img src="images/visibility.png">
-                                                What main features have I chosen?</h4>
-                                            <div class="row">
-                                                <div class="col-md-3 col-sm-12" style="padding-top:25px;">
-                                                    <img style="width: 100%;" src="images/pomodoro_problem1.png">
-                                                </div>
-                                                <div class="col-md-3 col-sm-12" style="padding-top:25px;">
-                                                    <img style="width: 100%;" src="images/pomodoro_prototype1.png">
-                                                </div>
-                                                <div class="col-md-6 col-sm-12 ">
-                                                    <h5><b>Redefined the countdown timer on the main page.</b></h5>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 col-sm-12" style="padding-top:25px;">
-                                                    <img style="width: 100%;" src="images/pomodoro_problem1.png">
-                                                </div>
-                                                <div class="col-md-3 col-sm-12" style="padding-top:25px;">
-                                                    <img style="width: 100%;" src="images/pomodoro_prototype2.png">
-                                                </div>
-                                                <div class="col-md-6 col-sm-12 ">
-                                                    <h5><b>Created a new coupon feature, so people can use the focusing
-                                                            time
-                                                            that
-                                                            they accumulated to exchange to real world discounts.</b>
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 col-sm-12" style="padding-top:25px;">
-                                                    <img style="width: 100%;" src="images/pomodoro_problem4.png">
-                                                </div>
-                                                <div class="col-md-3 col-sm-12" style="padding-top:25px;">
-                                                    <img style="width: 100%;" src="images/pomodoro_prototype4.png">
-                                                </div>
-                                                <div class="col-md-6 col-sm-12 ">
-                                                    <h5><b>Created a new coupon feature, so people can use the focusing
-                                                            time
-                                                            that
-                                                            they accumulated to exchange to real world discounts.</b>
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-
-                                                <div class="col-md-3 col-md-offset-3 col-sm-12"
-                                                    style="padding-top:25px;">
-                                                    <img style="width: 100%;" src="images/pomodoro_prototype3.png">
-                                                </div>
-                                                <div class="col-md-6 col-sm-12 ">
-                                                    <h5><b>Recategorized the information and reorganized the list
-                                                            page.</b></h5>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <br>
-                                </div>
-                            </div>
-
-                            <div class="row p-l-50 p-r-50 p-t-50 p-b-100">
-                                <div class="col-sm-12 ">
-                                    <!--<p> STEP 6/ EVALUATE</p>-->
-                                    <h3 style="text-align:center;">06. - Usability test</h3>
-                                    <h5 style="text-align:center;">I followed Steve Krug’s template and KJ analysis as
-                                        my usability
-                                        testing. I
-                                        am impressed by the feedback I got from the participants. It is fun
-                                        to
-                                        gain
-                                        different perspectives from different
-                                        people, especially when they are using the app and are trying to
-                                        share
-                                        their
-                                        concerns for each step. Based on the result, I can learn what is
-                                        their
-                                        favorite part and what confuses them.
-                                    </h5>
-                                    <div class="image text-center">
-                                        <img src="images/pomodoro_usabilitytest.png">
-                                        <br><a href="Pomodoro Usability Test Report.pdf" target="_blank"
-                                            class="btn btn-mask"
-                                            style="background-color: #f3f3f3; padding: 0px 15px 0px 15px; border-radius: 15px;">
-                                            Detail
-                                            Test
-                                            Rrport (.pdf)</a>
-
-                                    </div>
-                                    <br>
-                                    <div
-                                        style=" background:linear-gradient(to top left, #FFf5EE 0%, #FFFFFF 100%); padding: 0px 15px 0px 15px; border-radius: 15px;">
-                                        <div class=" p-t-30 p-l-30 p-r-30 p-b-30">
-                                            <h4 class="p-t-30" style="color: #B5965B;"><img src="images/visibility.png">
-                                                What designs have I changed? </h4>
-                                            <h5>
-                                                <ul>
-                                                    <li>Added a navigation bar and made the "add task" function
-                                                        appear
-                                                        on
-                                                        more
-                                                        pages.
-                                                    </li>
-                                                    <li>Showed the progress to let users know the total estimated
-                                                        time
-                                                        they
-                                                        would spend on the task.
-                                                    </li>
-                                                    <li>Removed the guide page for very-first-time users, since the
-                                                        design
-                                                        should be based on users' mental model without learning
-                                                        anything
-                                                        before they use this app. </li>
-                                                </ul>
-                                            </h5>
-                                        </div>
-                                    </div><br>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End: Section Heading -->
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    <!--End: 3rd Section
-    - Portfolio PAGE
-====================================-->
-
-    <div class=" section section-item semi-dark-background" id="final-design">
-        <div class="inner-container ">
-            <div class="container ">
-                <div style="text-align:left;">
-                    <div class="section-header col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                        <div class="overflow">
-                            <div class="line-outer">
-                                <div class="line wow"></div>
-                            </div>
-                        </div>
-                        <div class="overflow">
-                            <div class="section-heading-outer m-b-15">
-                                <p class="sub-heading wow">FINAL DESIGN</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row ">
-                        <div class="image text-center">
-                            <div class="col-sm-6">
-                                <div class="image text-center p-t-50 p-b-50">
-                                    <img src="images/pomodoro_timer.png" style="width:100%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 p-t-100">
-                            <h3>Timer</h3>
-                            <h5>Natalie now can see the countdown timer and choose the task that she wants
-                                to
-                                do directly after she opens the app. This page also provides the total
-                                estimated time for the task, so she knows how much time she will need to
-                                spend
-                                on this task. </h5>
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <div class="col-sm-6 p-t-100">
-                            <h3>Daily To-Do List</h3>
-                            <h5>This list shows Natalie her daily tasks organized by category and
-                                listed from high priority to low priority. Natalie can choose to see other
-                                dates'
-                                to-do lists by changing the date on the top of the list page. Also, she can
-                                add
-                                a
-                                new task in one step by inputting simple information.
-                            </h5>
-                        </div>
-                        <div class="image text-center">
-                            <div class="col-sm-6 p-t-50 p-b-50">
-                                <div class="image text-center">
-                                    <img src="images/pomodoro_list.png" style="width: 100%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="image text-center">
-                            <div class=" col-sm-6 p-t-50 p-b-50">
-                                <div class="image text-center">
-                                    <img src="images/pomodoro_coupon.png" style="width: 100%">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 p-t-100">
-                            <h3>Coupon</h3>
-                            <h5>With this new function, Natalie now uses this app to help her
-                                manage time. Although building a new habit is challenging, the coupon
-                                function also helps her to buy things for a cheaper price and saves money.
-                                This
-                                keep Natalie using it.</h5>
-                        </div>
+                                                <li>
+                                                    <b>Giving up a normal solution for a better one</b><br> To give
+                                                    up a
+                                                    solution that I already have, and to seek a better one is always
+                                                    hard. But since I reframed the problem, I need to throw away the
+                                                    old
+                                                    idea for a new to come. It is hard to do so, but the feedback
+                                                    from
+                                                    users let me know that this is the right decision.
+                                                </li>
+                                        <li>
+                                            <b>Designers should not only focus on
+                                                design</b> <br>Though I know this theory, it is hard to
+                                            fulfill
+                                            in reality. In my previous
+                                            prototype version, the add button was on the main page, but
+                                            since I
+                                            don’t
+                                            like that interface design very much, I removed the add button.
+                                            However,
+                                            after the usability test, I have realized how a big mistake I
+                                            made.
+                                        </li>-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    <div class=" section section-item dark-background" id="conclusion">
-        <div class="inner-container ">
-            <div class="container ">
-                <div style="text-align:left;">
-                    <div class="section-header col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                        <div class="overflow">
-                            <div class="line-outer">
-                                <div class="line wow"></div>
-                            </div>
-                        </div>
-                        <div class="overflow">
-                            <div class="section-heading-outer m-b-15">
-                                <p class="sub-heading wow">REFLECTION</p>
-                                <h5>What I have learned from this project...</h5>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row p-b-100">
-                        <div class="col-sm-12">
-
-                            <h5>
-
-                                <ul>
-                                    <li><b>Reframing problems</b> <br>In the very beginning, I thought this
-                                        project is only an interface problem. I can solve the problem by
-                                        providing a better interface design and user flow. However, after I
-                                        talked with interviewees, I have found out that the core problem of
-                                        current situation is more about human factors. Thus, I need to
-                                        redefine the problem and find the real prolem that is behind the
-                                        screen.
-                                    </li>
-                                    <li>
-                                        <b>Giving up a normal solution for a better one</b><br> To give up a
-                                        solution that I already have, and to seek a better one is always
-                                        hard. But since I reframed the problem, I need to throw away the old
-                                        idea for a new to come. It is hard to do so, but the feedback from
-                                        users let me know that this is the right decision.
-                                    </li>
-                                    <li>
-                                        <b>Designers should not only focus on
-                                            design</b> <br>Though I know this theory, it is hard to fulfill
-                                        in reality. In my previous
-                                        prototype version, the add button was on the main page, but since I
-                                        don’t
-                                        like that interface design very much, I removed the add button.
-                                        However,
-                                        after the usability test, I have realized how a big mistake I made.
-                                    </li>
-                                    <li>
-                                        <b>Don't make users think</b><br> I used to have a guide page in my
-                                        initial version for
-                                        the first time users. However, after the
-                                        first usability test, I found out that users easily forget
-                                        where to find the specific function. A
-                                        good design should follow users' mental model and let them easily
-                                        and
-                                        quickly find the function they want. And also,
-                                        although my app is based on a pomodoro technique, I should not think
-                                        that
-                                        everyone using my application knows it. I should apply the
-                                        technique in the app without letting users' learn, and let users'
-                                        gain the benefit from the technique directly.
-                                    </li>
-                                </ul>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
     <!--Start: 3rd Section
      - Portfolio PAGE
      ====================================-->
@@ -818,7 +857,8 @@
                 <div class=" text-right ">
                     <a href="trueticket.html" class="btn btn-mask"
                         style=" padding: 0px 15px 0px 15px; border-radius: 15px;">
-                        <h4 style="color:#B5965B">Next : True Ticket <i class="icon icon-arrow-right"></i></h4>
+                        <h4 style="color:#B5965B">Next : True Ticket <i class="icon icon-arrow-right"></i>
+                        </h4>
                     </a>
                 </div>
             </div>
@@ -828,15 +868,11 @@
     <div class=" section section-item dark-background">
         <div class="col-sm-12 col-xs-12" style="text-align:center;">
             <ul class="nav social-icon">
-                <li><a href="https://dribbble.com/szufangwang" target="_blank"><i
-                            class="icon icon-social-dribbble"></i></a>
-                </li>
                 <li><a href="https://www.linkedin.com/in/szufangwang/" target="_blank"><i
                             class="icon icon-social-linkedin"></i></a>
                 </li>
-                <li><a href="mailto:me@szufangwang.com"><i class="icon icon-icon-mail-alt"></i></a>
+                <li><a href="mailto:me@szufangwang.com"><i class="icon icon-icon-mail"></i></a>
                 </li>
-
             </ul>
         </div> <!-- End: .other-link -->
     </div>
@@ -851,7 +887,7 @@
     <!-- Custom Script
 ==========================================-->
     <script src="js/custom-scripts.js"></script>
-
+    <script src="js/scrollingsidebar.js"></script>
 
 
 </body>
